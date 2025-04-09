@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+.footer.light {
+  color: #333;
+}
+
+.footer.dark {
+  color: #ffffff;
+}

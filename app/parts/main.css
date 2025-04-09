@@ -1,0 +1,15 @@
+.main-part {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 30px;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

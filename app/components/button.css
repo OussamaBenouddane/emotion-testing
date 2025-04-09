@@ -1,0 +1,38 @@
+.record-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+.record-btn.dark {
+  background-color: var(--light-background);
+  color: var(--light-foreground);
+  
+}
+
+.record-btn.light {
+  background-color: var(--dark-background);
+  color: var(--dark-foreground);
+}
+
+.theme-btn {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.theme-btn.light {
+  background-color: var(--light-background);
+  border: solid 2px var(--light-foreground);
+}
+
+.theme-btn.dark {
+  background-color: var(--dark-background);
+  border: solid 2px var(--dark-foreground);
+}

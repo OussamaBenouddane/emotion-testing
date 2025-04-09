@@ -1,13 +1,8 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --light-background: rgba(240, 248, 255, 0.882);
+  --light-foreground: rgb(19, 22, 42);
+  --dark-background: rgb(19, 22, 42);
+  --dark-foreground: rgba(240, 248, 255, 0.882);
 }
 
 html,
@@ -17,11 +12,19 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body.light {
+  background-color: var(--light-background);
+  color: var(--light-foreground);
+}
+
+body.dark {
+  background-color: var(--dark-background);
+  color: var(--dark-foreground);
 }
 
 * {
@@ -35,8 +38,4 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+
