@@ -1,18 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "./parts/header";
 import Main from "./parts/main";
 import Footer from "./parts/footer";
+import { useTheme } from "./theme-context";
 
 export default function Home() {
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    document.body.classList.replace(theme, (mediaQuery.matches ? 'dark' : 'light'));
-    setTheme(mediaQuery.matches ? 'dark' : 'light');
-  }, []);
+  
+  const {theme, setTheme} = useTheme();
+  console.log(theme)
+  document.body.className += ` ${theme}`
+  
 
   const handleThemeToggle = (newTheme) => {
       let elements = document.getElementsByClassName(theme)

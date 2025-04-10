@@ -1,22 +1,3 @@
-.record-btn {
-  padding: 10px 30px;
-  cursor: pointer;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-}
-
-.record-btn.dark {
-  background-color: var(--light-background);
-  color: var(--light-foreground);
-  
-}
-
-.record-btn.light {
-  background-color: var(--dark-background);
-  color: var(--dark-foreground);
-}
-
 .theme-btn {
   width: 33px;
   height: 33px;

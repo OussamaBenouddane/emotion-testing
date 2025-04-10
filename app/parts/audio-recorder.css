@@ -1,0 +1,68 @@
+.record-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+.record-btn.dark {
+  background-color: var(--light-background);
+  color: var(--light-foreground);
+  
+}
+
+.record-btn.light {
+  background-color: var(--dark-background);
+  color: var(--dark-foreground);
+}
+
+.record-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.preview-part {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.preview-audio {
+  height: 30px;
+  
+  border-radius: 5px;
+  width: 200px;
+}
+
+
+
+.preview-audio.light {
+  border: 2px solid black;
+  background-color: white;
+}
+
+.preview-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.predict-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .preview-part {
+    flex-direction: column;
+  }
+}
