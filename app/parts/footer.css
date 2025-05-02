@@ -1,0 +1,9 @@
+.footer-part {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+}

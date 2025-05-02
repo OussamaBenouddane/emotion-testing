@@ -1,0 +1,27 @@
+.custom-select-wrapper {
+  position: relative;
+  width: 200px;
+}
+
+.custom-select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+}
+
+

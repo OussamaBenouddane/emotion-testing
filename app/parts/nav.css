@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-title {
+  text-transform: capitalize;
+  font-size: 32px;
+  font-weight: 700;
+}
