@@ -1,10 +1,10 @@
 .extracted-features {
-  border: 1px solid red;
+  border: 1px solid rgba(245, 245, 245, 0.325);
   border-radius: 8px;
   padding: 15px;
   width: 250px;
   height: 125px;
-  background-color: black;
+  background-color: #0E1B29;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,10 +16,11 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #9DA9B4
 }
 
 .feature-plot {
-  border: 1px solid red;
+  border: 1px solid rgba(245, 245, 245, 0.249);
   border-radius: 8px;
   padding: 15px;
   width: 220px;

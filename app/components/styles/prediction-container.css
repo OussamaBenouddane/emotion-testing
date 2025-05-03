@@ -1,8 +1,8 @@
 .prediction-container {
-  border: 1px solid red;
+  border: 1px solid rgba(245, 245, 245, 0.325);
   width: 180px;
   aspect-ratio: 1;
-  background-color: green;
+  background-color: #0E1B29 ;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,7 @@
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #9DA9B4
 }
 
 .prediction-result {

@@ -1,0 +1,29 @@
+.recording-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.recording-txt {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stop-btn {
+  padding: 5px;
+  border: 1px solid #2b3c4c;
+  border-radius: 3px;
+  background-color: #2c3e50;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.stop-txt {
+  font-size: 12px;
+  text-transform: uppercase;
+}

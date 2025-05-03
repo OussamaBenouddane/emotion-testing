@@ -1,4 +1,4 @@
-import "./feature.css";
+import "./styles/feature.css";
 
 export default function Feature({ name, plot }) {
   return <div className="extracted-features">
