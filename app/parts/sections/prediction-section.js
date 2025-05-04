@@ -12,13 +12,23 @@ export default function PredictionSection({
   selectedModel,
   onModelChange,
 }) {
+  // Map emotion codes to display names if needed
+  const emotionMap = {
+    "ang": "Angry",
+    "hap": "Happy", 
+    "neu": "Neutral",
+    "sad": "Sad"
+  };
+  
+  // Use the mapped emotion name if available, otherwise use the original value
+  const displayEmotion = emotionMap[emotion] || emotion;
+
   return (
     <div className="operation-card">
-      <CardTitle>test</CardTitle>
+      <CardTitle>prediction</CardTitle>
       <SelectField value={selectedModel} onChange={onModelChange} />
-      <PredictBtn disabled={!isRecorded} onClick={onPredict} />
-      <Prediction status={predictionStatus} result={emotion} />
+      <PredictBtn disabled={!isRecorded || predictionStatus === "processing"} onClick={onPredict} />
+      <Prediction status={predictionStatus} result={displayEmotion} />
     </div>
   );
 }
-
