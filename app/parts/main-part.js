@@ -94,6 +94,7 @@ export default function Main() {
           isRecording={isRecording}
           isRecorded={isRecorded}
           audioUrl={audioUrl}
+          audioBlob={audioBlob}
           onStart={startRecording}
           onStop={stopRecording}
           onReset={handleReset}
